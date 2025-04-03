@@ -1,0 +1,70 @@
+.root {
+	/*-fx-background-color: linear-gradient(to bottom right, #2c3e50, #3498db);*/
+}
+
+.button {
+	-fx-background-color: #e74c3c;
+	-fx-text-fill: white;
+	-fx-font-size: 14px;
+	-fx-padding: 10px 20px;
+	-fx-background-radius: 5px;
+}
+
+.button:hover {
+	-fx-background-color: #c0392b;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 1);
+}
+
+.text-field {
+	-fx-border-color: #3498db;
+	-fx-border-radius: 3px;
+	-fx-prompt-text-fill: #95a5a6;
+}
+
+.menu-bar {
+	-fx-background-color: #f3f3f3;
+}
+
+/* Menu 按钮的样式 */
+.menu {
+	-fx-text-fill: white; /* 默认文字颜色 */
+}
+
+/* 悬停在 Menu 上时的效果 */
+.menu:hover {
+	-fx-background-color: #56955b; /* 悬停背景色（红色） */
+	-fx-text-fill: white;
+}
+
+/* 悬停在 Menu 上时的效果 */
+.menu:showing {
+	-fx-background-color: #56955b; /* 悬停背景色（红色） */
+	-fx-text-fill: white;
+}
+
+/* 弹出菜单 */
+.context-menu {
+	-fx-min-width: 110px;
+	-fx-background-color: rgba(61, 159, 71, 0.85);
+	-fx-border-color: #092f0b;
+}
+
+/* MenuItem 默认 */
+.menu-item {
+	-fx-background-color: transparent;
+}
+
+/* MenuItem 悬停 */
+.menu-item:hover {
+	-fx-background-color: #55945a !important;
+}
+
+/* MenuItem 选中 */
+.menu-item:selected {
+	-fx-background-color: #55945a !important;
+}
+
+/* MenuItem 禁用 */
+.menu-item:disabled {
+	-fx-text-fill: #95a5a6; /* 灰色文字 */
+}
