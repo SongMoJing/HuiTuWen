@@ -45,8 +45,9 @@
 /* 弹出菜单 */
 .context-menu {
 	-fx-min-width: 110px;
-	-fx-background-color: rgba(61, 159, 71, 0.85);
-	-fx-border-color: #092f0b;
+	-fx-border-radius: 10px;
+	-fx-background-color: #2B2D30;
+	-fx-border-color: #1e1f22;
 }
 
 /* MenuItem 默认 */
@@ -57,14 +58,17 @@
 /* MenuItem 悬停 */
 .menu-item:hover {
 	-fx-background-color: #55945a !important;
+	-fx-border-radius: 2px;
 }
 
 /* MenuItem 选中 */
 .menu-item:selected {
 	-fx-background-color: #55945a !important;
+	-fx-border-radius: 2px;
 }
 
 /* MenuItem 禁用 */
 .menu-item:disabled {
-	-fx-text-fill: #95a5a6; /* 灰色文字 */
+	-fx-text-fill: #b0c4c9; /* 灰色文字 */
 }
+

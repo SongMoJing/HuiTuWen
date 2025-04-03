@@ -3,34 +3,46 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="423.0" prefWidth="674.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.songmojing.huituwen.Controller.ControllerWelcome">
-   <top>
-	   <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-		   <MenuBar>
-			   <Menu mnemonicParsing="false" text="文件 (_F)">
-				   <MenuItem fx:id="MenuFileNew" mnemonicParsing="false" text="新建文件" />
-				   <MenuItem fx:id="MenuFileOpen" mnemonicParsing="false" text="打开文件" />
-				   <SeparatorMenuItem mnemonicParsing="false" />
-<!--				   disable="true"-->
-				   <MenuItem fx:id="MenuFileSave" mnemonicParsing="false" text="保存文件" />
-				   <MenuItem fx:id="MenuFileSave_as" mnemonicParsing="false" text="另存为" />
-				   <MenuItem fx:id="MenuFileExport" mnemonicParsing="false" text="导出文件" />
-				   <SeparatorMenuItem mnemonicParsing="false" />
-				   <MenuItem fx:id="MenuFileClose" mnemonicParsing="false" text="关闭文件" />
-			   </Menu>
-			   <Menu mnemonicParsing="false" text="编辑 (_E)">
-				   <MenuItem fx:id="MenuEdit" mnemonicParsing="false" text="Delete" />
-			   </Menu>
-			   <Menu mnemonicParsing="false" text="帮助 (_H)">
-				   <MenuItem fx:id="MenuHelp" mnemonicParsing="false" text="About" />
-			   </Menu>
-		   </MenuBar>
-		   <ToolBar prefHeight="40.0" prefWidth="200.0">
-			   <Button mnemonicParsing="false" text="Button" />
-		   </ToolBar>
-	   </VBox>
-   </top>
-   <bottom>
-      <HBox alignment="CENTER_LEFT" prefHeight="40.0" BorderPane.alignment="CENTER" />
-   </bottom>
+<?import javafx.scene.Group?>
+<?import org.controlsfx.control.ToggleSwitch?>
+<BorderPane prefHeight="423.0" prefWidth="674.0" stylesheets="@../css/style.css"
+			xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+			fx:controller="io.songmojing.huituwen.Controller.ControllerWelcome">
+	<top>
+		<VBox prefHeight="28.0" prefWidth="674.0" BorderPane.alignment="CENTER">
+			<MenuBar>
+				<Menu mnemonicParsing="false" text="文件 (_F)">
+					<MenuItem fx:id="MenuFileNew" mnemonicParsing="false" text="新建文件"/>
+					<MenuItem fx:id="MenuFileOpen" mnemonicParsing="false" text="打开文件"/>
+					<SeparatorMenuItem mnemonicParsing="false"/>
+					<!--				   disable="true"-->
+					<MenuItem fx:id="MenuFileSave" mnemonicParsing="false" text="保存文件"/>
+					<MenuItem fx:id="MenuFileSave_as" mnemonicParsing="false" text="另存为"/>
+					<MenuItem fx:id="MenuFileExport" mnemonicParsing="false" text="导出文件"/>
+					<SeparatorMenuItem mnemonicParsing="false"/>
+					<MenuItem fx:id="MenuFileClose" mnemonicParsing="false" text="关闭文件"/>
+				</Menu>
+				<Menu mnemonicParsing="false" text="编辑 (_E)">
+					<MenuItem fx:id="MenuEdit" mnemonicParsing="false" text="Delete"/>
+				</Menu>
+				<Menu mnemonicParsing="false" text="帮助 (_H)">
+					<MenuItem fx:id="MenuHelp" mnemonicParsing="false" text="About"/>
+				</Menu>
+			</MenuBar>
+<!--			<ToolBar prefHeight="40.0" prefWidth="200.0">-->
+<!--				<Button mnemonicParsing="false" text="Button"/>-->
+<!--			</ToolBar>-->
+		</VBox>
+	</top>
+	<bottom>
+		<HBox alignment="CENTER_LEFT" prefHeight="40.0" BorderPane.alignment="CENTER"/>
+	</bottom>
+	<left>
+		<VBox prefHeight="309.0" prefWidth="30.0" BorderPane.alignment="CENTER">
+			<RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0"/>
+			<RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0"/>
+			<RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0"/>
+			<RadioButton mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0"/>
+		</VBox>
+	</left>
 </BorderPane>

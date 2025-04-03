@@ -20,10 +20,6 @@ public class WelcomeApplication extends Application {
 		stage.show();
 	}
 	
-	public static void close() {
-		stage.close();
-	}
-	
 	public static Stage getStage() {
 		return stage;
 	}

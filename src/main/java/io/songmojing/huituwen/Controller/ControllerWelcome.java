@@ -20,6 +20,7 @@ public class ControllerWelcome {
 	@FXML
 	private void initialize() {
 		MenuFileNew.setOnAction(event -> {
+			htwdd = new HtwDD(800, 600);
 		});
 		MenuFileOpen.setOnAction(event -> {
 			File file = FileTool.selectFile("选择 HtwDD 文件", "绘图文设计草稿 (*.HtwDD)", "*.HtwDD");

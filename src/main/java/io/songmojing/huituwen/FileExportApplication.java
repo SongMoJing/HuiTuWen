@@ -9,7 +9,7 @@ public class FileExportApplication extends Application {
 	
 	@Override
 	public void start(Stage stage) throws Exception {
-		Scene scene = new Scene(new FXMLLoader(WelcomeApplication.class.getResource("layout/file_export.fxml")).load(), 1000, 600);
+		Scene scene = new Scene(new FXMLLoader(WelcomeApplication.class.getResource("layout/file_export.fxml")).load(), 800, 500);
 		stage.setScene(scene);
 		stage.setTitle("导出为…");
 		stage.show();
